@@ -1,0 +1,33 @@
+{% extends 'loginRegBase.html' %}
+
+
+{% block content %}
+<div class="wrapper1 wrapperRegistration">
+    <h2>Registration</h2>
+    <form method="post">
+      <div class="input-box">
+        <input type="text" placeholder="Enter your name" name="name" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your email" name="username" required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Create password" name="password" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Profession" name="profession" required>
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button1">
+        <input type="Submit" value="Register">
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href='{{ url_for("auth.login") }}'>Login now</a></h3>
+      </div>
+    </form>
+</div>
+{% endblock %}
+

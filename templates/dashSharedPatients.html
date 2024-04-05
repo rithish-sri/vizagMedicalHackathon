@@ -1,0 +1,124 @@
+{% extends 'dashboardBase.html' %}
+
+{% block mainPanel %}
+<div class="main-panel">
+  <div class="content-wrapper">
+    <div class="row">
+      <div class="dropdown mb-3">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="true">
+          This Month
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <a class="dropdown-item itc" href="#">This Month</a>
+          <a class="dropdown-item" href="#">Past 3 months</a>
+          <a class="dropdown-item nestle" href="#">Past 1 Year</a>
+          <a class="dropdown-item" href="#">All time</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Patient Details</h4>
+          <p class="card-description">
+            Click details to <code>see more</code>
+          </p>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="text-center">
+                    Patient ID
+                  </th>
+                  <th class="text-center">
+                    Patient Name
+                  </th>
+                  <th class="text-center">
+                    From
+                  </th>
+                  <th class="text-center">
+                    Status
+                  </th>
+                  <th class="text-center">
+                    Analysis
+                  </th>
+                  <th class="text-center">
+                    Date and time
+                  </th>
+                  <th class="text-center"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center p11">
+                    67
+                  </td>
+                  <td class="text-center p12">
+                    Rishabh D. Adhithyan
+                  </td>
+                  <td class="text-center p12">
+                    Dr. Keerthana
+                  </td>
+                  <td class="text-center "><label class="badge badge-opacity-warning p13">In review</label></td>
+                  <td class="text-center p14">
+                    Cataract
+                  </td>
+                  <td class="text-center p16">
+                    <h6>04/04/2024 - 6:43 PM</h6>
+                  </td>
+                  <td><button type="button" class="btn btn-success btn-rounded btn-fw order-btn p1">Details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center p21">
+                    97
+                  </td>
+                  <td class="text-center p22">
+                    Sidhaarth SP
+                  </td>
+                  <td class="text-center p12">
+                    Dr. Revan
+                  </td>
+                  <td class="text-center"><label class="badge badge-opacity-success p23">Completed</label></td>
+                  <td class="text-center p24">
+                    Normal
+                  </td>
+                  <td class="text-center p25">
+                    <h6>04/04/2024 - 7:00 PM</h6>
+                  </td>
+                  <td><button type="button" class="btn btn-success btn-rounded btn-fw order-btn p2">Details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center p31">
+                    101
+                  </td>
+                  <td class="text-center p32">
+                    Hari Krishna
+                  </td>
+                  <td class="text-center p32">
+                    Teju
+                  </td>
+                  <td class="text-center"><label class="badge badge-danger p33"><b>Operation</b></label></td>
+                  <td class="text-center p34">
+                    Retina Damage
+                  </td>
+                  <td class="text-center p35">
+                    <h6>04/04/2024 - 8:30 PM</h6>
+                  </td>
+                  <td><button type="button" class="btn btn-success btn-rounded btn-fw order-btn p3">Details</button>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

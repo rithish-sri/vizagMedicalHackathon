@@ -1,0 +1,82 @@
+{% extends 'dashboardBase.html' %}
+
+{% block mainPanel %}
+<div class="main-panel">
+  <div class="content-wrapper">
+    <div class="row">
+      <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Patient Details</h4>
+            <p class="card-description">
+              Basic form layout
+            </p>
+            <form class="forms-sample" method="POST" enctype="multipart/form-data">
+
+              <div class="form-group">
+                <label for="modelName">Model</label>
+                <select id="modelName" name="modelName" class="form-select">
+                  <option value="cataractDetection">Cataract Detection Model</option>
+                  <option value="retinaDamagae">Retina Damage Detection Model</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="firstName">Patient First Name</label>
+                <input type="text" class="form-control" id="patientName" placeholder="Patient first Name"
+                  name="firstName">
+              </div>
+
+              <div class="form-group">
+                <label for="secondName">Patient Second Name</label>
+                <input type="text" class="form-control" id="patientName" placeholder="Patient second Name"
+                  name="secondName">
+              </div>
+
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age" placeholder="Age" name="age">
+              </div>
+
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" class="form-select">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="others">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="symptoms">Symptoms</label>
+                <input type="text" class="form-control" id="symptoms" placeholder="Symptoms" name="symptoms">
+              </div>
+
+              <div class="form-group">
+                <label for="formFile">Upload Image</label>
+                <input class="form-control" type="file" id="formFile" name="image">
+              </div>
+
+              <button type="submit" class="btn btn-primary me-2">Submit</button>
+              <button class="btn btn-light">Cancel</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- content-wrapper ends -->
+  <!-- partial:partials/_footer.html -->
+  <footer class="footer">
+    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+      <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a
+          href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from
+        BootstrapDash.</span>
+      <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights
+        reserved.</span>
+    </div>
+  </footer>
+  <!-- partial -->
+</div>
+{% endblock %}

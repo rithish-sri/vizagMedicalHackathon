@@ -1,1 +1,2 @@
-# vizagMedicalHackathon
+# vizagHackathon
+Vizag Medical Hackathon
